@@ -1,0 +1,11 @@
+Universe = vanilla 
+Executable = short.sh
+Arguments = hello.txt
+Error = log/job.err.$(Cluster)-$(Process) 
+Output = log/job.out.$(Cluster)-$(Process) 
+Log = log/job.log.$(Cluster) 
+
+should_transfer_files = YES 
+transfer_input_files = https://stash.osgconnect.net/cms-user/khurtado/hello.txt
+
+Queue 1
